@@ -10,9 +10,10 @@ import org.springframework.web.servlet.ModelAndView;
 public class PageController {
 
 	@RequestMapping(value = {"/", "/home", "/index"})
-	public ModelAndView index() {
+	public ModelAndView home() {
 		ModelAndView modelAndView = new ModelAndView("page");
-		modelAndView.addObject("greeting", "Welcome to Spring MVC");
+		modelAndView.addObject("title", "Home");
+		modelAndView.addObject("userClickHome", true);
 		return modelAndView;		
 	}
 	
@@ -25,13 +26,36 @@ public class PageController {
 //		modelAndView.addObject("greeting", greeting);
 //		return modelAndView;		
 //	}
-	@RequestMapping(value = {"/test/{greeting}"})
-	public ModelAndView test(@PathVariable("greeting")String greeting) {
+//	@RequestMapping(value = {"/test/{greeting}"})
+//	public ModelAndView test(@PathVariable("greeting")String greeting) {
+//		ModelAndView modelAndView = new ModelAndView("page");
+//		if(greeting == null) {
+//			greeting = "Hello There";
+//		}
+//		modelAndView.addObject("greeting", greeting);
+//		return modelAndView;		
+//	}
+	@RequestMapping(value = {"/about"})
+	public ModelAndView about() {
 		ModelAndView modelAndView = new ModelAndView("page");
-		if(greeting == null) {
-			greeting = "Hello There";
-		}
-		modelAndView.addObject("greeting", greeting);
+		modelAndView.addObject("title", "About Us");
+		modelAndView.addObject("userClickAbout", true);
+		return modelAndView;		
+	}
+	
+	@RequestMapping(value = {"/listProduct"})
+	public ModelAndView listProduct() {
+		ModelAndView modelAndView = new ModelAndView("page");
+		modelAndView.addObject("title", "Product List");
+		modelAndView.addObject("userClickListProduct", true);
+		return modelAndView;		
+	}
+	
+	@RequestMapping(value = {"/contact"})
+	public ModelAndView contact() {
+		ModelAndView modelAndView = new ModelAndView("page");
+		modelAndView.addObject("title", "Contact Us");
+		modelAndView.addObject("userClickContact", true);
 		return modelAndView;		
 	}
 	
