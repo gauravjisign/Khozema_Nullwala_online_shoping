@@ -10,9 +10,12 @@
   <name>onlineshoppingbackend</name>
   <url>http://maven.apache.org</url>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
+  	<properties>
+	    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	 	<javaee.version>8.0.1</javaee.version>
+		<spring.version>4.3.6.RELEASE</spring.version>
+		<spring.security.version>4.2.2.RELEASE</spring.security.version>		
+	</properties>
 
   <dependencies>
     <dependency>
@@ -21,6 +24,13 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+    
+    <!-- SPRING -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
   </dependencies>
   <build>
 		<!-- Updated for the latest version of JAVA -->

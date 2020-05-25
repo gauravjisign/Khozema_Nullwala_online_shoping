@@ -15,7 +15,15 @@
 	</properties>
 	
   <dependencies>
-  <!-- JAVA EE API -->
+  
+ 	<!--  Link Backend Project -->
+  	<dependency>
+  		<groupId>net.ecommerce</groupId>
+		<artifactId>onlineshoppingbackend</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  	
+  	<!-- JAVA EE API -->
   	<!-- JAVA EE -->
 	<dependency>
 		<groupId>javax</groupId>
@@ -33,11 +41,11 @@
     </dependency>
     
     <!-- SPRING -->
-		<dependency>
+		<!-- <dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-core</artifactId>
 			<version>${spring.version}</version>
-		</dependency>
+		</dependency> -->
 
 		<dependency>
 			<groupId>org.springframework</groupId>

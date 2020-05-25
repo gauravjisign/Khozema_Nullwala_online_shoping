@@ -57,14 +57,16 @@
 		    	<%@include file="about.jsp" %>
 		    </c:if>
 		    <!-- Load only when user click view product -->
-		    <c:if test="${userClickListProduct == true}" >
-		    	<%@include file="home.jsp" %>
+		    <c:if test="${userClickAllProducts == true or userClickCategoryProduct == true}" >
+		    	<%@include file="product-list.jsp" %>
 		    </c:if>
+		    
 		    
 		    <!-- Load only when user click contact -->
 		    <c:if test="${userClickContact == true}" >
 		    	<%@include file="contact.jsp" %>
 		    </c:if>
+		    
 	    </div>
 	    <!-- /.container -->
 		<!-- Footer comes here -->

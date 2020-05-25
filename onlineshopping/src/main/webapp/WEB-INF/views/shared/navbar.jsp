@@ -16,8 +16,8 @@
                     <li id="about">
                         <a href="${contextRoot}/about">About</a>
                     </li>
-                    <li id="listProduct">
-                        <a href="${contextRoot}/listProduct">View Products</a> <!-- Services -->
+                    <li id="listProducts">
+                        <a href="${contextRoot}/show/all/products">View Products</a> <!-- Services -->
                     </li>
                     <li id="contact">
                         <a href="${contextRoot}/contact">Contact</a>
